@@ -1,0 +1,1973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet LastModified="2025-10-19T11:41:10.089Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://www.siemens.com/simatic-s7-opcua_V1</Uri>
+        <Uri>http://Supervisor</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://www.siemens.com/simatic-s7-opcua_V1" PublicationDate="2025-10-19T11:11:14+02:00" Version="1.0.0">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2023-12-15T00:00:00Z" Version="1.05.03" />
+        </Model>
+        <Model ModelUri="http://Supervisor" PublicationDate="2025-10-19T11:11:14+02:00" Version="1.0.0">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2023-12-15T00:00:00Z" Version="1.05.03" />
+            <RequiredModel ModelUri="http://www.siemens.com/simatic-s7-opcua_V1" PublicationDate="2025-10-19T11:11:14+02:00" Version="1.0.0" />
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Int16">i=4</Alias>
+        <Alias Alias="UInt16">i=5</Alias>
+        <Alias Alias="Int32">i=6</Alias>
+        <Alias Alias="UInt32">i=7</Alias>
+        <Alias Alias="Double">i=11</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="Guid">i=14</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="HasEncoding">i=38</Alias>
+        <Alias Alias="STRING">ns=1;i=3014</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <si:Generator Product="SiOME" Edition="Standard" Version="3.0.3-installer" />
+        </Extension>
+        <Extension>
+            <si:GeneratorExtension Hash="5b7577b2ba37dd694c73dccb97b7e150" />
+        </Extension>
+    </Extensions>
+    <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:SimaticInterfaceType">
+        <DisplayName>SimaticInterfaceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="i=2003" NodeId="ns=1;i=6010" BrowseName="Icon" ParentNodeId="ns=1;i=1004">
+        <DisplayName>Icon</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Guid" NodeId="ns=1;i=6011" BrowseName="1:InterfaceUuid" ParentNodeId="ns=1;i=1004">
+        <DisplayName>InterfaceUuid</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ns=1;i=3064" NodeId="ns=1;i=6014" BrowseName="1:InterfaceVersion" ParentNodeId="ns=1;i=1004">
+        <DisplayName>InterfaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+    <UAObject SymbolicName="Default_Binary" NodeId="ns=1;i=5001" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=1;s=ServerInterfaces" BrowseName="1:ServerInterfaces" ParentNodeId="i=85">
+        <DisplayName>ServerInterfaces</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+        </References>
+    </UAObject>
+    <UADataType NodeId="ns=1;i=3001" BrowseName="1:BYTE">
+        <DisplayName>BYTE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3002" BrowseName="1:WORD">
+        <DisplayName>WORD</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3003" BrowseName="1:DWORD">
+        <DisplayName>DWORD</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3004" BrowseName="1:LWORD">
+        <DisplayName>LWORD</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=9</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3005" BrowseName="1:S5TIME">
+        <DisplayName>S5TIME</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3006" BrowseName="1:TIME">
+        <DisplayName>TIME</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=6</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3007" BrowseName="1:LTIME">
+        <DisplayName>LTIME</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=8</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3008" BrowseName="1:DATE">
+        <DisplayName>DATE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3011" BrowseName="1:DT">
+        <DisplayName>DT</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3009" BrowseName="1:TOD">
+        <DisplayName>TOD</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3010" BrowseName="1:LTOD">
+        <DisplayName>LTOD</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=9</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3067" BrowseName="1:POINTER">
+        <DisplayName>POINTER</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3065" BrowseName="1:ANY">
+        <DisplayName>ANY</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3066" BrowseName="1:REMOTE">
+        <DisplayName>REMOTE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3065</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3012" BrowseName="1:CHAR">
+        <DisplayName>CHAR</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=3</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3013" BrowseName="1:WCHAR">
+        <DisplayName>WCHAR</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3014" BrowseName="1:STRING">
+        <DisplayName>STRING</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=12</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3015" BrowseName="1:TIMER">
+        <DisplayName>TIMER</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3016" BrowseName="1:COUNTER">
+        <DisplayName>COUNTER</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3019" BrowseName="1:BLOCK_DB">
+        <DisplayName>BLOCK_DB</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3018" BrowseName="1:BLOCK_FB">
+        <DisplayName>BLOCK_FB</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3017" BrowseName="1:BLOCK_FC">
+        <DisplayName>BLOCK_FC</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3020" BrowseName="1:BLOCK_SDB">
+        <DisplayName>BLOCK_SDB</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3024" BrowseName="1:HW_ANY">
+        <DisplayName>HW_ANY</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3034" BrowseName="1:HW_IO">
+        <DisplayName>HW_IO</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3024</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3035" BrowseName="1:HW_IOSYSTEM">
+        <DisplayName>HW_IOSYSTEM</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3024</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3037" BrowseName="1:HW_MODULE">
+        <DisplayName>HW_MODULE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3034</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3036" BrowseName="1:HW_SUBMODULE">
+        <DisplayName>HW_SUBMODULE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3034</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3039" BrowseName="1:HW_IEPORT">
+        <DisplayName>HW_IEPORT</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3036</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3040" BrowseName="1:HW_HSC">
+        <DisplayName>HW_HSC</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3036</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3041" BrowseName="1:HW_PWM">
+        <DisplayName>HW_PWM</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3036</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3042" BrowseName="1:HW_PTO">
+        <DisplayName>HW_PTO</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3036</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3058" BrowseName="1:PORT">
+        <DisplayName>PORT</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3036</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3038" BrowseName="1:HW_INTERFACE">
+        <DisplayName>HW_INTERFACE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3036</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3033" BrowseName="1:HW_DEVICE">
+        <DisplayName>HW_DEVICE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3024</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3044" BrowseName="1:HW_DPMASTER">
+        <DisplayName>HW_DPMASTER</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3038</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3045" BrowseName="1:HW_DPSLAVE">
+        <DisplayName>HW_DPSLAVE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3033</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3026" BrowseName="1:AOM_IDENT">
+        <DisplayName>AOM_IDENT</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3046" BrowseName="1:EVENT_ANY">
+        <DisplayName>EVENT_ANY</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3026</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3047" BrowseName="1:EVENT_ATT">
+        <DisplayName>EVENT_ATT</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3046</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3048" BrowseName="1:EVENT_HWINT">
+        <DisplayName>EVENT_HWINT</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3047</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3027" BrowseName="1:OB_ANY">
+        <DisplayName>OB_ANY</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=4</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3051" BrowseName="1:OB_CYCLIC">
+        <DisplayName>OB_CYCLIC</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3049" BrowseName="1:OB_DELAY">
+        <DisplayName>OB_DELAY</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3055" BrowseName="1:OB_DIAG">
+        <DisplayName>OB_DIAG</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3053" BrowseName="1:OB_PCYCLE">
+        <DisplayName>OB_PCYCLE</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3057" BrowseName="1:OB_STARTUP">
+        <DisplayName>OB_STARTUP</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3056" BrowseName="1:OB_TIMEERROR">
+        <DisplayName>OB_TIMEERROR</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3050" BrowseName="1:OB_TOD">
+        <DisplayName>OB_TOD</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3052" BrowseName="1:OB_ATT">
+        <DisplayName>OB_ATT</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3027</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3054" BrowseName="1:OB_HWINT">
+        <DisplayName>OB_HWINT</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3052</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3028" BrowseName="1:RTM">
+        <DisplayName>RTM</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3029" BrowseName="1:PIP">
+        <DisplayName>PIP</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3030" BrowseName="1:CONN_ANY">
+        <DisplayName>CONN_ANY</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3060" BrowseName="1:CONN_OUC">
+        <DisplayName>CONN_OUC</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3030</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3059" BrowseName="1:CONN_PRG">
+        <DisplayName>CONN_PRG</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3030</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3031" BrowseName="1:CONN_R_ID">
+        <DisplayName>CONN_R_ID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=7</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3032" BrowseName="1:DB_ANY">
+        <DisplayName>DB_ANY</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=5</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3062" BrowseName="1:DB_DYN">
+        <DisplayName>DB_DYN</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3032</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3061" BrowseName="1:DB_WWW">
+        <DisplayName>DB_WWW</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3032</Reference>
+        </References>
+    </UADataType>
+    <UADataType IsAbstract="true" NodeId="ns=1;i=3400" BrowseName="1:SimaticStructures">
+        <DisplayName>SimaticStructures</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+        </References>
+    </UADataType>
+    <UADataType IsAbstract="true" NodeId="ns=1;i=3500" BrowseName="1:SimaticSystemStructures">
+        <DisplayName>SimaticSystemStructures</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+        </References>
+    </UADataType>
+    <UADataType NodeId="ns=1;i=3064" BrowseName="1:SimaticVersion">
+        <DisplayName>SimaticVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5001</Reference>
+        </References>
+        <Definition Name="1:SimaticVersion">
+            <Field DataType="Int32" Name="Major" />
+            <Field DataType="Int32" Name="Minor" />
+            <Field DataType="Int32" Name="Build" />
+        </Definition>
+    </UADataType>
+    <UAObject SymbolicName="http___Supervisor" NodeId="ns=2;i=54" BrowseName="2:http://Supervisor" ParentNodeId="i=11715">
+        <DisplayName>http://Supervisor</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="String" NodeId="ns=2;i=55" BrowseName="2:NamespaceUri" ParentNodeId="ns=2;i=54">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://Supervisor</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=2;i=56" BrowseName="2:NamespaceVersion" ParentNodeId="ns=2;i=54">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=2;i=57" BrowseName="2:NamespacePublicationDate" ParentNodeId="ns=2;i=54">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>2025-10-19T13:11:14+02:00</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=58" BrowseName="2:IsNamespaceSubset" ParentNodeId="ns=2;i=54">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>false</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="i=256" ValueRank="1" NodeId="ns=2;i=59" BrowseName="2:StaticNodeIdTypes" ParentNodeId="ns=2;i=54">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=291" ValueRank="1" NodeId="ns=2;i=60" BrowseName="2:StaticNumericNodeIdRange" ParentNodeId="ns=2;i=54">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=2;i=61" BrowseName="2:StaticStringNodeIdPattern" ParentNodeId="ns=2;i=54">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=2;i=62" BrowseName="2:DefaultRolePermissions" ParentNodeId="ns=2;i=54">
+        <DisplayName>DefaultRolePermissions</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=95" NodeId="ns=2;i=63" BrowseName="2:DefaultAccessRestrictions" ParentNodeId="ns=2;i=54">
+        <DisplayName>DefaultAccessRestrictions</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=54</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=2;i=1" BrowseName="2:Supervisor" ParentNodeId="ns=1;s=ServerInterfaces">
+        <DisplayName>Supervisor</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;s=ServerInterfaces</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1004</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=2;i=12" BrowseName="2:SupervisorCmd" ParentNodeId="ns=2;i=1">
+        <DisplayName>SupervisorCmd</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=2;i=1</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject NodeId="ns=2;i=64" BrowseName="2:PlcStatus" ParentNodeId="ns=2;i=1">
+        <DisplayName>PlcStatus</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=2;i=1</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="Default_Binary" NodeId="ns=2;i=67" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="ns=2;i=66" NodeId="ns=2;i=68" BrowseName="2:mode" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>mode</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."mode"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="UInt16" NodeId="ns=2;i=69" BrowseName="2:effective" ParentNodeId="ns=2;i=68" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>effective</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=68</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."mode"."effective"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=70" BrowseName="2:ready" ParentNodeId="ns=2;i=68" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ready</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=68</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."mode"."ready"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAObject SymbolicName="Default_Binary" NodeId="ns=2;i=72" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="ns=2;i=71" NodeId="ns=2;i=73" BrowseName="2:active" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>active</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."active"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="UInt16" NodeId="ns=2;i=74" BrowseName="2:baseId" ParentNodeId="ns=2;i=73" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>baseId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=73</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."active"."baseId"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="UInt16" NodeId="ns=2;i=75" BrowseName="2:toolId" ParentNodeId="ns=2;i=73" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>toolId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=73</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."active"."toolId"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="UInt16" NodeId="ns=2;i=76" BrowseName="2:profileId" ParentNodeId="ns=2;i=73" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>profileId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=73</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."active"."profileId"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAObject SymbolicName="Default_Binary" NodeId="ns=2;i=78" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="ns=2;i=77" NodeId="ns=2;i=79" BrowseName="2:exec" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>exec</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="UInt16" NodeId="ns=2;i=80" BrowseName="2:ackSeq" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ackSeq</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."ackSeq"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=81" BrowseName="2:accepted" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>accepted</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."accepted"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=82" BrowseName="2:busy" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>busy</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."busy"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=83" BrowseName="2:done" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>done</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."done"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=84" BrowseName="2:error" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>error</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."error"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="UInt32" NodeId="ns=2;i=85" BrowseName="2:errorCode" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>errorCode</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."errorCode"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=86" BrowseName="2:cancelAck" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>cancelAck</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."cancelAck"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=87" BrowseName="2:pauseAck" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>pauseAck</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."pauseAck"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=88" BrowseName="2:resumeAck" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>resumeAck</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."resumeAck"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=89" BrowseName="2:paused" ParentNodeId="ns=2;i=79" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>paused</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=79</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."exec"."paused"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAObject SymbolicName="Default_Binary" NodeId="ns=2;i=91" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="ns=2;i=90" NodeId="ns=2;i=92" BrowseName="2:pose" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>pose</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pose"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=93" BrowseName="2:tcpPosX_mm" ParentNodeId="ns=2;i=92" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcpPosX_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=92</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pose"."tcpPosX_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=94" BrowseName="2:tcpPosY_mm" ParentNodeId="ns=2;i=92" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcpPosY_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=92</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pose"."tcpPosY_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=95" BrowseName="2:tcpPosZ_mm" ParentNodeId="ns=2;i=92" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcpPosZ_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=92</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pose"."tcpPosZ_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=96" BrowseName="2:tcpOriA_deg" ParentNodeId="ns=2;i=92" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcpOriA_deg</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=92</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pose"."tcpOriA_deg"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=97" BrowseName="2:tcpOriB_deg" ParentNodeId="ns=2;i=92" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcpOriB_deg</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=92</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pose"."tcpOriB_deg"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=98" BrowseName="2:tcpOriC_deg" ParentNodeId="ns=2;i=92" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcpOriC_deg</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=92</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pose"."tcpOriC_deg"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=99" BrowseName="2:e1Pos_mm" ParentNodeId="ns=2;i=92" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>e1Pos_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=92</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pose"."e1Pos_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAObject SymbolicName="Default_Binary" NodeId="ns=2;i=101" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="ns=2;i=100" NodeId="ns=2;i=102" BrowseName="2:teach" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>teach</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=103" BrowseName="2:startX_mm" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>startX_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."startX_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=104" BrowseName="2:startY_mm" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>startY_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."startY_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=105" BrowseName="2:startZ_mm" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>startZ_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."startZ_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=106" BrowseName="2:startE1_mm" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>startE1_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."startE1_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=107" BrowseName="2:startOk" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>startOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."startOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=108" BrowseName="2:endX_mm" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>endX_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."endX_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=109" BrowseName="2:endY_mm" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>endY_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."endY_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=110" BrowseName="2:endZ_mm" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>endZ_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."endZ_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;i=111" BrowseName="2:endE1_mm" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>endE1_mm</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."endE1_mm"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=112" BrowseName="2:endOk" ParentNodeId="ns=2;i=102" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>endOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=102</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."teach"."endOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UADataType SymbolicName="S_PlcStatus___mode_" NodeId="ns=2;i=66" BrowseName="2:&quot;PlcStatus&quot;.&quot;mode&quot;">
+        <DisplayName>"PlcStatus"."mode"</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3400</Reference>
+            <Reference ReferenceType="HasEncoding">ns=2;i=67</Reference>
+        </References>
+        <Definition Name="2:&quot;PlcStatus&quot;.&quot;mode&quot;">
+            <Field DataType="UInt16" Name="effective" />
+            <Field DataType="Boolean" Name="ready" />
+        </Definition>
+    </UADataType>
+    <UADataType SymbolicName="S_PlcStatus___active_" NodeId="ns=2;i=71" BrowseName="2:&quot;PlcStatus&quot;.&quot;active&quot;">
+        <DisplayName>"PlcStatus"."active"</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3400</Reference>
+            <Reference ReferenceType="HasEncoding">ns=2;i=72</Reference>
+        </References>
+        <Definition Name="2:&quot;PlcStatus&quot;.&quot;active&quot;">
+            <Field DataType="UInt16" Name="baseId" />
+            <Field DataType="UInt16" Name="toolId" />
+            <Field DataType="UInt16" Name="profileId" />
+        </Definition>
+    </UADataType>
+    <UADataType SymbolicName="S_PlcStatus___exec_" NodeId="ns=2;i=77" BrowseName="2:&quot;PlcStatus&quot;.&quot;exec&quot;">
+        <DisplayName>"PlcStatus"."exec"</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3400</Reference>
+            <Reference ReferenceType="HasEncoding">ns=2;i=78</Reference>
+        </References>
+        <Definition Name="2:&quot;PlcStatus&quot;.&quot;exec&quot;">
+            <Field DataType="UInt16" Name="ackSeq" />
+            <Field DataType="Boolean" Name="accepted" />
+            <Field DataType="Boolean" Name="busy" />
+            <Field DataType="Boolean" Name="done" />
+            <Field DataType="Boolean" Name="error" />
+            <Field DataType="UInt32" Name="errorCode" />
+            <Field DataType="Boolean" Name="cancelAck" />
+            <Field DataType="Boolean" Name="pauseAck" />
+            <Field DataType="Boolean" Name="resumeAck" />
+            <Field DataType="Boolean" Name="paused" />
+        </Definition>
+    </UADataType>
+    <UADataType SymbolicName="S_PlcStatus___pose_" NodeId="ns=2;i=90" BrowseName="2:&quot;PlcStatus&quot;.&quot;pose&quot;">
+        <DisplayName>"PlcStatus"."pose"</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3400</Reference>
+            <Reference ReferenceType="HasEncoding">ns=2;i=91</Reference>
+        </References>
+        <Definition Name="2:&quot;PlcStatus&quot;.&quot;pose&quot;">
+            <Field DataType="Double" Name="tcpPosX_mm" />
+            <Field DataType="Double" Name="tcpPosY_mm" />
+            <Field DataType="Double" Name="tcpPosZ_mm" />
+            <Field DataType="Double" Name="tcpOriA_deg" />
+            <Field DataType="Double" Name="tcpOriB_deg" />
+            <Field DataType="Double" Name="tcpOriC_deg" />
+            <Field DataType="Double" Name="e1Pos_mm" />
+        </Definition>
+    </UADataType>
+    <UADataType SymbolicName="S_PlcStatus___teach_" NodeId="ns=2;i=100" BrowseName="2:&quot;PlcStatus&quot;.&quot;teach&quot;">
+        <DisplayName>"PlcStatus"."teach"</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3400</Reference>
+            <Reference ReferenceType="HasEncoding">ns=2;i=101</Reference>
+        </References>
+        <Definition Name="2:&quot;PlcStatus&quot;.&quot;teach&quot;">
+            <Field DataType="Double" Name="startX_mm" />
+            <Field DataType="Double" Name="startY_mm" />
+            <Field DataType="Double" Name="startZ_mm" />
+            <Field DataType="Double" Name="startE1_mm" />
+            <Field DataType="Boolean" Name="startOk" />
+            <Field DataType="Double" Name="endX_mm" />
+            <Field DataType="Double" Name="endY_mm" />
+            <Field DataType="Double" Name="endZ_mm" />
+            <Field DataType="Double" Name="endE1_mm" />
+            <Field DataType="Boolean" Name="endOk" />
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.heartbeat_plc" BrowseName="2:heartbeatPlc" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>heartbeatPlc</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."heartbeatPlc"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=2;s=PLC.step_plc" BrowseName="2:stepPlc" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>stepPlc</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."stepPlc"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.plc_ok" BrowseName="2:plcOk" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>plcOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."plcOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.safety_ok" BrowseName="2:safetyOk" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>safetyOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."safetyOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.air_ok" BrowseName="2:airOk" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>airOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."airOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.insp_water_ok" BrowseName="2:inspWaterOk" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>inspWaterOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."inspWaterOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.tank_water_ok" BrowseName="2:tankWaterOk" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tankWaterOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."tankWaterOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.robot_ok" BrowseName="2:robotOk" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>robotOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."robotOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.acknowledge" BrowseName="2:acknowledge" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>acknowledge</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."acknowledge"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="STRING" NodeId="ns=2;s=PLC.carriage_Id" BrowseName="2:carriageId" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>carriageId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."carriageId"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.new_carriage_Id" BrowseName="2:newCarriageId" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>newCarriageId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."newCarriageId"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.id_running" BrowseName="2:idRunning" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>idRunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."idRunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.id_ok" BrowseName="2:idOk" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>idOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."idOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.start_us_ready" BrowseName="2:startUsReady" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>startUsReady</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."startUsReady"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.stop_us_ready" BrowseName="2:stopUsReady" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>stopUsReady</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."stopUsReady"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.pa_check_ready" BrowseName="2:paCheckReady" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>paCheckReady</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."paCheckReady"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.gain_ready" BrowseName="2:gainReady" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>gainReady</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."gainReady"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.tcg_ready" BrowseName="2:tcgReady" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcgReady</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."tcgReady"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="STRING" NodeId="ns=2;s=PLC.id_scan" BrowseName="2:idScan" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>idScan</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."idScan"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;s=PLC.point_origin" BrowseName="2:pointOrigin" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>pointOrigin</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."pointOrigin"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;s=PLC.x_size" BrowseName="2:xSize" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>xSize</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."xSize"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;s=PLC.y_size" BrowseName="2:ySize" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>ySize</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."ySize"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.scan_ref_start" BrowseName="2:scanRefStart" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>scanRefStart</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."scanRefStart"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.scan_insp_start" BrowseName="2:scanInspStart" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>scanInspStart</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."scanInspStart"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.mark_running" BrowseName="2:markRunning" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>markRunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."markRunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.mark_state" BrowseName="2:markState" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>markState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."markState"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.break_us" BrowseName="2:breakUs" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>breakUs</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."breakUs"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.unbreak_us" BrowseName="2:unbreakUs" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>unbreakUs</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."unbreakUs"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.robot_rescanning" BrowseName="2:robotRescanning" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>robotRescanning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."robotRescanning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=PLC.acknowledge_error" BrowseName="2:acknowledgeError" ParentNodeId="ns=2;i=64" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>acknowledgeError</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=64</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"PlcStatus"."acknowledgeError"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.heartbeat_supervisor" BrowseName="2:heartbeatSupervisor" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>heartbeatSupervisor</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."heartbeatSupervisor"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=2;s=Supervisor.step_supervisor" BrowseName="2:stepSupervisor" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>stepSupervisor</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."stepSupervisor"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.supervisor_ok" BrowseName="2:supervisorOk" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>supervisorOk</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."supervisorOk"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.state_us" BrowseName="2:stateUs" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>stateUs</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."stateUs"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_carriage_id" BrowseName="2:reqCarriageId" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqCarriageId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqCarriageId"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_id" BrowseName="2:reqId" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqId</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqId"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="STRING" NodeId="ns=2;s=Supervisor.pns" BrowseName="2:pns" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>pns</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."pns"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="STRING" NodeId="ns=2;s=Supervisor.reference_part" BrowseName="2:referencePart" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>referencePart</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."referencePart"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Int16" NodeId="ns=2;s=Supervisor.end-effector" BrowseName="2:endEffector" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>endEffector</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."endEffector"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="UInt16" NodeId="ns=2;s=Supervisor.ut_tech" BrowseName="2:utTech" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>utTech</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."utTech"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.teach_req" BrowseName="2:teachReq" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>teachReq</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."teachReq"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.pa_check_req" BrowseName="2:paCheckReq" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>paCheckReq</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."paCheckReq"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.tcg_req" BrowseName="2:tcgReq" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcgReq</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."tcgReq"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.start_us_running" BrowseName="2:startUsRunning" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>startUsRunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."startUsRunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.stop_us_running" BrowseName="2:stopUsRunning" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>stopUsRunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."stopUsRunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.elem_state" BrowseName="2:elemState" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>elemState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."elemState"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.elem_running" BrowseName="2:elemRunning" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>elemRunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."elemRunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.bal_state" BrowseName="2:balState" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>balState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."balState"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.bal_running" BrowseName="2:balRunning" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>balRunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."balRunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.gain_state" BrowseName="2:gainState" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>gainState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."gainState"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.gain_running" BrowseName="2:gainRunning" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>gainRunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."gainRunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.tcg_in_progress" BrowseName="2:tcgInProgress" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcgInProgress</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."tcgInProgress"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.tcg_next_step" BrowseName="2:tcgNextStep" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcgNextStep</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."tcgNextStep"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.tcg_state" BrowseName="2:tcgState" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>tcgState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."tcgState"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_ref_part" BrowseName="2:reqRefPart" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqRefPart</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqRefPart"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_stop_cycle" BrowseName="2:reqStopCycle" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqStopCycle</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqStopCycle"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_tcg_adj" BrowseName="2:reqTcgAdj" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqTcgAdj</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqTcgAdj"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.scan_ref_state" BrowseName="2:scanRefState" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>scanRefState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."scanRefState"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.scan_ref_running" BrowseName="2:scanRefRunning" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>scanRefRunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."scanRefRunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_pre_eval" BrowseName="2:reqPreEval" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqPreEval</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqPreEval"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_identification_state" BrowseName="2:reqIdentificationState" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqIdentificationState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqIdentificationState"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.scan_insp_state" BrowseName="2:scanInspState" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>scanInspState</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."scanInspState"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.scan_insp_running" BrowseName="2:scanInsprunning" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>scanInsprunning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."scanInsprunning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_mark" BrowseName="2:reqMark" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqMark</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqMark"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.req_verif" BrowseName="2:reqVerif" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>reqVerif</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."reqVerif"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Double" NodeId="ns=2;s=Supervisor.point_coordinates" BrowseName="2:pointCoordinates" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>pointCoordinates</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."pointCoordinates"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.go_back" BrowseName="2:goBack" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>goBack</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."goBack"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.rescanning" BrowseName="2:rescanning" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>rescanning</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."rescanning"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="STRING" NodeId="ns=2;s=Supervisor.error_message" BrowseName="2:errorMessage" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>errorMessage</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."errorMessage"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.error_occured" BrowseName="2:errorOcurred" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>errorOcurred</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."errorOcurred"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=2;s=Supervisor.gain_adjustment_req" BrowseName="2:gainAdjustmentReq" ParentNodeId="ns=2;i=12" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>gainAdjustmentReq</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    <Extensions>
+      <Extension>
+        <si:VariableMapping>"SupervisorCmd"."gainAdjustmentReq"</si:VariableMapping>
+      </Extension>
+    </Extensions>
+    </UAVariable>
+</UANodeSet>
